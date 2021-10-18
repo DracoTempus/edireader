@@ -22,8 +22,8 @@ package com.berryworks.edireader;
 
 import com.berryworks.edireader.util.BranchingWriter;
 import com.berryworks.edireader.util.DateTimeGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.sun.org.slf4j.internal.Logger;
+import com.sun.org.slf4j.internal.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
