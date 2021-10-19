@@ -25,6 +25,7 @@ import com.berryworks.edireader.tokenizer.Token;
 import com.berryworks.edireader.util.ContentHandlerBase64Encoder;
 import com.berryworks.edireader.util.FixedLength;
 import com.berryworks.edireader.util.sax.QueuedContentHandler;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.ContentHandler;
@@ -555,6 +556,7 @@ public class AnsiReader extends StandardReader {
 
         // ISA*
         // ...^ (offset 3)
+
         char c = buf[3];
         setDelimiter(c);
 

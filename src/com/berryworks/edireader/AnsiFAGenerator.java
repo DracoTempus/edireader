@@ -22,8 +22,9 @@ package com.berryworks.edireader;
 
 import com.berryworks.edireader.util.BranchingWriter;
 import com.berryworks.edireader.util.DateTimeGenerator;
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
@@ -37,7 +38,7 @@ import static com.berryworks.edireader.util.FixedLength.valueOf;
 public class AnsiFAGenerator extends ReplyGenerator {
     private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass().getSimpleName());
     public static final String REGEX_CHARS_NEEDING_ESCAPE = "\\.[{(*+?^$|";
-    public static final String REGEX_PREFIX = "\\";
+    public static final String REGEX_PREFIX = "=\\\\";
 
     protected final BranchingWriter ackStream;
     protected boolean preambleGenerated, skipFA;
